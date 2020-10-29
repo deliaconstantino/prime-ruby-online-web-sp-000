@@ -7,10 +7,10 @@ def prime?(num)
 
   i = 5
   while num >= i**
-    if num % i == 0
-      return false
-    elsif num % (i + 2) == 0
-      return false
+    if num % i == 0 ||  num % (i + 2) == 0
+      false
+      break
+    end
     i += 6
   end
 return true
