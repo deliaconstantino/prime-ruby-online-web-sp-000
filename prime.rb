@@ -1,4 +1,4 @@
-def prime(num)
+def prime?(num)
 #must be positive
 #must be greter than 1
 #cannot be divisible by 2, 3, 5, 7 or any number but itself and one
