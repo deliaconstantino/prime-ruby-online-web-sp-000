@@ -1,5 +1,7 @@
 def prime?(num)
-  if num % num == 0
+  if num <= 0
+    return false
+  elsif num % num == 0
     return true
   else
     return false
