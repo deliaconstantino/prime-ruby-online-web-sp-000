@@ -1,4 +1,17 @@
 def prime(num)
+  if num <= 3
+
+    case num
+    when num > 1
+      true
+    when num < 1
+      false
+    end
+
+elsif  
+
+
+
 end
 
 
