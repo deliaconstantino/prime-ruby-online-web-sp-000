@@ -1,7 +1,5 @@
 def prime?(num)
-#must be positive
-#must be greter than 1
-#cannot be divisible by 2, 3, 5, 7 or any number but itself and one
+if num < 3
   if num < 2
     return false
   elsif num > 3
@@ -19,3 +17,8 @@ def prime?(num)
   end
   true
 end
+#if the number is under 3 return false unless num == 1 or num ==2, then return true
+#if the number is divisible by 2 or 3 return false--have 9 in here already
+# if number is divisible by 5 and higher than 5 return false
+# or by 7 and higher than 7 return false
+#now progress by 6, but on the odds to automatically get any 3's that are not divisible by 2
