@@ -1,21 +1,40 @@
 def prime?(num)
-if num < 3
-  if num < 2
-    return false
-  elsif num > 3
-    num % 2 == 0 || num % 3 == 0
-    return false
-  elsif num > 7
-    num % 5 == 0 || num % 7 == 0
-    return false
-  elsif num > 13
-    num % 11 == 0 || num % 13 == 0
-    return false
-  elsif num > 19 || num < 5000
-    num % 17 == 0 || num % 19 == 0
+  if num <= 3
+    return true if num == 3
+    return true if num == 2
     return false
   end
+
+  i = 5
+
+  while i < num
+    if num % i == 0
+      return false
+    elsif num % (i + 2) == 0 && num != i + 2
+      return false
+    end
+    i += 6
+  end
   true
+end
+
+
+  # if num < 2
+  #   return false
+  # elsif num > 3
+  #   num % 2 == 0 || num % 3 == 0
+  #   return false
+  # elsif num > 7
+  #   num % 5 == 0 || num % 7 == 0
+  #   return false
+  # elsif num > 13
+  #   num % 11 == 0 || num % 13 == 0
+  #   return false
+  # elsif num > 19 || num < 5000
+  #   num % 17 == 0 || num % 19 == 0
+  #   return false
+  # end
+  # true
 end
 #if the number is under 4 return false unless num == 3 or num ==2, then return true
 #if the number is divisible by 2 or 3 return false--have 9 in here already
