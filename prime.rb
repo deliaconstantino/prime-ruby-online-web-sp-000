@@ -13,7 +13,7 @@ def prime?(num)
   elsif num > 13
     num % 11 == 0 || num % 13 == 0
     return false
-  elsif num > 19
+  elsif num > 19 || num < 5000
     num % 17 == 0 || num % 19 == 0
     return false
   end
