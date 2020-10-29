@@ -17,7 +17,7 @@ if num < 3
   end
   true
 end
-#if the number is under 3 return false unless num == 1 or num ==2, then return true
+#if the number is under 4 return false unless num == 3 or num ==2, then return true
 #if the number is divisible by 2 or 3 return false--have 9 in here already
 # if number is divisible by 5 and higher than 5 return false
 # or by 7 and higher than 7 return false
