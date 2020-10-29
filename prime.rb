@@ -17,4 +17,5 @@ def prime(num)
     num % 17 == 0 || num % 19 == 0
     return false
   end
+  true
 end
