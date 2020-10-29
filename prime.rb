@@ -9,7 +9,6 @@ def prime?(num)
   while num >= i**
     if num % i == 0 ||  num % (i + 2) == 0
       false
-      break
     end
     i += 6
   end
