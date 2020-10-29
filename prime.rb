@@ -1,2 +1,5 @@
 def prime(num)
-to be not prime: 
+#must be positive
+#must be greater than three
+
+if num < 2
