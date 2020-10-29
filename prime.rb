@@ -11,7 +11,6 @@ def prime?(num)
       return false
     elsif num % (i + 2) == 0
       return false
-    end
     i += 6
   end
 return true
